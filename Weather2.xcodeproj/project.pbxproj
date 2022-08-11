@@ -13,6 +13,11 @@
 		32960F0D28981095007CB224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32960F0B28981095007CB224 /* Main.storyboard */; };
 		32960F0F28981097007CB224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32960F0E28981097007CB224 /* Assets.xcassets */; };
 		32960F1228981097007CB224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32960F1028981097007CB224 /* LaunchScreen.storyboard */; };
+		32960F1B28981691007CB224 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32960F1A28981691007CB224 /* DataModels.swift */; };
+		32C48EC4289951BD0016445C /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C48EC3289951BD0016445C /* ForecastViewController.swift */; };
+		32C48EC728996E080016445C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C48EC628996E080016445C /* CustomTableViewCell.swift */; };
+		32C48ECD2899754B0016445C /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C48ECC2899754B0016445C /* ForecastData.swift */; };
+		B8C266C528A2DFD4004E7871 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C266C428A2DFD4004E7871 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		32960F0E28981097007CB224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32960F1128981097007CB224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32960F1328981097007CB224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32960F1A28981691007CB224 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
+		32C48EC3289951BD0016445C /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		32C48EC628996E080016445C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		32C48ECC2899754B0016445C /* ForecastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
+		B8C266C428A2DFD4004E7871 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				32960F0E28981097007CB224 /* Assets.xcassets */,
 				32960F1028981097007CB224 /* LaunchScreen.storyboard */,
 				32960F1328981097007CB224 /* Info.plist */,
+				32960F1A28981691007CB224 /* DataModels.swift */,
+				32C48EC3289951BD0016445C /* ForecastViewController.swift */,
+				32C48EC628996E080016445C /* CustomTableViewCell.swift */,
+				32C48ECC2899754B0016445C /* ForecastData.swift */,
+				B8C266C428A2DFD4004E7871 /* LocationService.swift */,
 			);
 			path = Weather2;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C48EC728996E080016445C /* CustomTableViewCell.swift in Sources */,
 				32960F0A28981095007CB224 /* ViewController.swift in Sources */,
+				B8C266C528A2DFD4004E7871 /* LocationService.swift in Sources */,
+				32960F1B28981691007CB224 /* DataModels.swift in Sources */,
+				32C48EC4289951BD0016445C /* ForecastViewController.swift in Sources */,
 				32960F0628981095007CB224 /* AppDelegate.swift in Sources */,
+				32C48ECD2899754B0016445C /* ForecastData.swift in Sources */,
 				32960F0828981095007CB224 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5TTC8T2J9;
 				INFOPLIST_FILE = Weather2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.Weather2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5TTC8T2J9;
 				INFOPLIST_FILE = Weather2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.Weather2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
